@@ -8,12 +8,28 @@ body{
   background-repeat: no-repeat;
 }
 .App{
-  height: 50%;
+  height: 90%;
   margin: auto;
   
 }
 .content{
+  width: 70%;
+  margin: auto;
   display: grid;
   place-items: center;
   place-content: center;
+  background: #f2f0ff70;
+  padding: 0 20px;
+}
+.content p{
+  font-weight: 600;
+  line-break: auto;
+  text-align: justify;
+  color: rgb(43 40 41);
+}
+
+@media screen and (max-width: 460px){
+  .content{
+    width: 80%;
+  }
 }
