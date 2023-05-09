@@ -6,6 +6,7 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-y: auto;
 }
 .App{
   height: 90%;
@@ -20,7 +21,58 @@ body{
   place-content: center;
   background: #f2f0ff70;
   padding: 0 20px;
+  color: #000;
 }
+
+.content .events__container .event-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  width: 350px;
+}
+
+.content .events__container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+}
+
+.content .events__container .event-card img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.content .title {
+  padding: 20px 0;
+}
+
+.content .events__container .event-card .description__container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description__container div {
+  display: flex;
+  gap: 10px;
+}
+
+.description__container .description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__container .description p {
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
 .content p{
   font-weight: 600;
   line-break: auto;
