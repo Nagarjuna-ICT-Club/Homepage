@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logov2.png";
 import { useNavigate } from "react-router-dom";
+import LinkComponent from "../utils/Link";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -46,6 +47,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="links">
+        <LinkComponent path={"logo-design-guidelines"} title={"Events"} />
+        <LinkComponent path={"mission-vision"} title={"Mission and Vision"} />
       </div>
     </div>
   );

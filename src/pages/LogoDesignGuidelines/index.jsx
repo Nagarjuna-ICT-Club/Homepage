@@ -1,12 +1,16 @@
 import React from "react";
 import "./styles/style.scss";
+import LinkComponent from "../../utils/Link";
 import { Link } from "react-router-dom";
 
 const LogoDesionGuideLines = () => {
   return (
     <div className="logodesignguidelines__container">
       <div className="link">
-        <Link to={"/"}>Back to home</Link>
+        <p>
+          <i className="ri-arrow-left-line"></i>
+        </p>
+        <LinkComponent path={"/"} title={"Back to home"} />
       </div>
       <div className="wrapper">
         <div className="img__container">
@@ -31,7 +35,6 @@ const LogoDesionGuideLines = () => {
           </div>
         </div>
         <div className="event__details">
-          <h2>Event Details:</h2>
           <h3>Guidelines for Logo Design</h3>
           <p>
             Thank you for your interest in submitting a logo design for the
@@ -99,7 +102,10 @@ const LogoDesionGuideLines = () => {
           <p>
             We hope these guidelines help you create a high-quality logo that
             meets our requirements. If you have any questions or concerns,
-            please do not hesitate to contact us at ictclub@nagarjuna.edu.np.
+            please do not hesitate to contact us at{" "}
+            <span style={{ color: "#243e6a" }}>
+              <strong>ictclub@nagarjuna.edu.np</strong>{" "}
+            </span>
           </p>
           <p>Good luck with your design!</p>
         </div>
