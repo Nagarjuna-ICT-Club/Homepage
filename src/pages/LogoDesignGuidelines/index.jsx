@@ -25,13 +25,28 @@ const LogoDesionGuideLines = () => {
             <p>
               <i className="ri-calendar-line"></i>
             </p>
-            <p>May 10 - May 12</p>
+            <p>
+              {" "}
+              <strong>Date:</strong> 12 May 2023
+            </p>
           </div>
           <div className="price">
             <p>
-              <i className="ri-price-tag-3-fill"></i>
+              <i className="ri-time-line"></i>
             </p>
-            <p>Rs. 1000</p>
+            <p>
+              {" "}
+              <strong>Time:</strong> 3:00 PM - 4:30 PM{" "}
+            </p>
+          </div>
+          <div className="price">
+            <p>
+              <i className="ri-map-pin-line"></i>
+            </p>
+            <p>
+              {" "}
+              <strong>Venue:</strong> Nagarjuna College of IT
+            </p>
           </div>
         </div>
         <div className="event__details">
@@ -58,20 +73,22 @@ const LogoDesionGuideLines = () => {
           <p>
             To ensure your logo looks its best in all applications, we recommend
             creating it in both vector and raster formats. The ideal dimensions
-            for raster graphics are 1200px by 1200px with a minimum resolution
-            of 300dpi. For social media, we suggest creating a square format
-            logo with a minimum size of 400px by 400px, as the dimensions may
-            vary depending on the platform.
+            for raster graphics are <em>1200px</em> by <em>1200px</em> with a
+            minimum resolution of <em>300dpi.</em> For social media, we suggest
+            creating a square format logo with a minimum size of <em>400px</em>{" "}
+            by <em>400px</em> , as the dimensions may vary depending on the
+            platform.
           </p>
           <p>
             {" "}
             <strong>Color</strong>{" "}
           </p>
           <p>
-            The primary color for the Nagarjuna ICT Club is #243e6a. We
-            recommend incorporating this color into your design, but feel free
-            to use other colors as well. Please keep in mind that the logo
-            should be readable in both color and black and white.
+            The primary color for the Nagarjuna ICT Club is{" "}
+            <strong>#243e6a.</strong> We recommend incorporating this color into
+            your design, but feel free to use other colors as well. Please keep
+            in mind that the logo should be readable in both color and black and
+            white.
           </p>
           <p>
             {" "}
@@ -87,7 +104,7 @@ const LogoDesionGuideLines = () => {
               href="https://www.canva.com/learn/logo-design-principles/
 "
             >
-              Canva
+              https://www.canva.com/learn/logo-design-principles/
             </a>{" "}
           </p>
           <p>
