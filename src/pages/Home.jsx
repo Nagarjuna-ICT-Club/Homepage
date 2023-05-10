@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
         <div className="divider"></div>
-        <h2 className="title">Events</h2>
+        <h1 className="title">Events</h1>
 
         <div className="events__container">
           <div className="event-card">
@@ -52,9 +52,22 @@ const Home = () => {
                   all applications. Below are some guidelines to help you create
                   a high-quality logo that meets our requirements.
                 </p>
-                <button onClick={() => navigate("/logo-design-guidelines")}>
-                  Read More
-                </button>
+                <div className="buttons">
+                  <button onClick={() => navigate("/logo-design-guidelines")}>
+                    Read More
+                  </button>
+                  <button
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/forms/d/e/1FAIpQLSf_wsY4ot25dEhQXBhkm6uKEnrtwAEtdSFeczouoUWSHtzM4g/viewform",
+                        "_blank"
+                      )
+                    }
+                    className="register__btn"
+                  >
+                    Register Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>

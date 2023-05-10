@@ -28,7 +28,7 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
-  width: 350px;
+  width: 380px;
 }
 
 .content .events__container {
@@ -50,7 +50,7 @@ body {
 }
 
 .content .events__container .event-card .description__container {
-  padding:12px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -110,6 +110,27 @@ body {
   transform-origin: 0% 50%;
 }
 
+.description .buttons .register__btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.4s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px 0;
+}
+
+.buttons > * {
+  flex-grow: 1;
+}
+
+.buttons .register__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .content p {
   font-weight: 600;
   line-break: auto;
@@ -120,5 +141,11 @@ body {
 @media screen and (max-width: 460px) {
   .content {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .content .events__container .event-card {
+    width: 400px;
   }
 }
