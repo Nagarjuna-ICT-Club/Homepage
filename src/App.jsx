@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
-import MissionVision from "./pages/MissionVision";
-import LogoDesionGuideLines from "./pages/LogoDesignGuidelines/LogoDesionGuideLines";
+import MissionVision from "./pages/MissionAndVision";
+import LogoDesionGuideLines from "./pages/LogoDesignGuidelines";
 
 function App() {
   return (
