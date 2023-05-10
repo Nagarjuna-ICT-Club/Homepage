@@ -37,7 +37,7 @@ const Home = () => {
                 <p>
                   <i className="ri-calendar-line"></i>
                 </p>
-                <p>12 May 2023</p>
+                <p>16 May 2023</p>
               </div>
               <div className="price">
                 <p>

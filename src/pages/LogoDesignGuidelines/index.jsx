@@ -50,6 +50,11 @@ const LogoDesionGuideLines = () => {
           </div>
         </div>
         <div className="event__details">
+          <h3>Evaluation</h3>
+          <p>
+            The evaluation will be carried out by{" "}
+            <em>college administration</em> and <em>ict executives.</em>
+          </p>
           <h3>Guidelines for Logo Design</h3>
           <p>
             Thank you for your interest in submitting a logo design for the
