@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/style.scss";
 import LinkComponent from "../../utils/Link";
-import { Link } from "react-router-dom";
+import image from "../../LogoDesign.png";
 
 const LogoDesionGuideLines = () => {
   return (
@@ -14,12 +14,7 @@ const LogoDesionGuideLines = () => {
       </div>
       <div className="wrapper">
         <div className="img__container">
-          <img
-            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-            alt="unsplash__image"
-            width={"300"}
-            height={"250"}
-          />
+          <img src={image} alt="unsplash__image" width={"300"} height={"500"} />
           <h3>Logo Design Competition</h3>
           <div className="logo">
             <p>
