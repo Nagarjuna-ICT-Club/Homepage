@@ -8,8 +8,21 @@ const Home = () => {
   return (
     <div className="App" style={{ backgroundImage: "../assets/bg.png" }}>
       <div className="content">
-        <img src={Logo} alt="logo" />
-        <h2 className="title">Events</h2>
+        <div className="img__container">
+          <img src={Logo} alt="logo" />
+          <div className="links">
+            <LinkComponent
+              path={"mission-vision"}
+              title={"Check out Mission and Vision"}
+            />
+            <p>
+              <i className="ri-arrow-right-up-line"></i>
+            </p>
+          </div>
+        </div>
+        <div className="divider"></div>
+        <h1 className="title">Events</h1>
+
         <div className="events__container">
           <div className="event-card">
             <img
@@ -24,13 +37,12 @@ const Home = () => {
                 <p>
                   <i className="ri-calendar-line"></i>
                 </p>
-                <p>May 10 - May 12</p>
+                <p>16 May 2023</p>
               </div>
               <div className="price">
                 <p>
-                  <i className="ri-price-tag-3-fill"></i>
+                  <strong>Winning Price:</strong> Rs. 1000
                 </p>
-                <p>Rs. 1000</p>
               </div>
               <div className="description">
                 <p>
@@ -40,17 +52,26 @@ const Home = () => {
                   all applications. Below are some guidelines to help you create
                   a high-quality logo that meets our requirements.
                 </p>
-                <button onClick={() => navigate("/logo-design-guidelines")}>
-                  Read More
-                </button>
+                <div className="buttons">
+                  <button onClick={() => navigate("/logo-design-guidelines")}>
+                    Read More
+                  </button>
+                  <button
+                    onClick={() =>
+                      window.open(
+                        "https://docs.google.com/forms/d/e/1FAIpQLSf_wsY4ot25dEhQXBhkm6uKEnrtwAEtdSFeczouoUWSHtzM4g/viewform",
+                        "_blank"
+                      )
+                    }
+                    className="register__btn"
+                  >
+                    Register Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="links">
-        <LinkComponent path={"logo-design-guidelines"} title={"Events"} />
-        <LinkComponent path={"mission-vision"} title={"Mission and Vision"} />
       </div>
     </div>
   );

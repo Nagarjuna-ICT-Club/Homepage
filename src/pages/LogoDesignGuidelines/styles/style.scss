@@ -25,9 +25,15 @@
       flex-direction: column;
       gap: 10px;
 
+      
       img {
-        /* width: 100%; */
         object-fit: cover;
+        @media screen and (max-width:769px) {
+          width: 100%; 
+        }
+        @media screen and (min-width:426px) {
+          height: 300px;
+        }
       }
 
       div {
@@ -38,11 +44,17 @@
     .event__details {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 8px;
 
-      h3 {
+      h2 {
         color: #153978;
-        font-size: 21px;
+        font-size: 24px;
+      }
+
+      h1 {
+        color: #153978;
+        padding-bottom: 10px;
+        line-height: 1.1;
       }
 
       p {
@@ -51,6 +63,18 @@
           color: #153978;
         }
       }
+
+      .evaluation {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+          font-size: 17px;
+        }
+      }
+
     }
   }
 }

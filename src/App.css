@@ -1,30 +1,25 @@
-body{
+body {
   overflow: hidden;
   width: 100vw;
   min-height: 100vh;
-  background-image: url('./assets/bg.png');
+  background-image: url("./assets/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: auto;
 }
-.App{
+.App {
   height: 100%;
   margin: auto;
 }
-.content{
+.content {
   width: 70%;
   margin: auto;
   display: grid;
   place-items: center;
   place-content: center;
-  background: #f2f0ff70;
   padding: 0 20px;
   color: #000;
-}
-
-.content > img {
-  background-color: #fff;
 }
 
 .content .events__container .event-card {
@@ -33,12 +28,16 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
-  width: 350px;
+  width: 380px;
 }
 
 .content .events__container {
   display: grid;
   /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+}
+
+.content .img__container {
+  background-color: #fff;
 }
 
 .content .events__container .event-card img {
@@ -51,10 +50,10 @@ body{
 }
 
 .content .events__container .event-card .description__container {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .description__container div {
@@ -75,23 +74,30 @@ body{
   overflow: hidden;
 }
 
+.description__container h3 {
+  color: #153978;
+  font-size: 20px;
+}
+
 .App .links {
-  position: absolute;
-  bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 0;
-  left: 0;
-  gap: 10px;
+  gap: 3px;
+}
+
+.links p i {
+  font-size: 17px;
 }
 
 .App .links a {
   color: #000;
   display: inline-block;
+  font-size: 17px;
+  color: #144fb4;
 }
 
-.App .links a::after{
+.App .links a::after {
   display: block;
   content: "";
   border-bottom: 1px solid #000;
@@ -104,15 +110,42 @@ body{
   transform-origin: 0% 50%;
 }
 
-.content p{
+.description .buttons .register__btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.4s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px 0;
+}
+
+.buttons > * {
+  flex-grow: 1;
+}
+
+.buttons .register__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.content p {
   font-weight: 600;
   line-break: auto;
   text-align: justify;
   color: rgb(43 40 41);
 }
 
-@media screen and (max-width: 460px){
-  .content{
+@media screen and (max-width: 460px) {
+  .content {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .content .events__container .event-card {
+    width: 400px;
   }
 }
