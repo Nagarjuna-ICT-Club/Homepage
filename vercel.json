@@ -1,6 +1,11 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/"
+    },
+    { "source": "/(.*)", "destination": "/" },
+    {
       "source": "/logo-design-guidelines",
       "destination": "/logo-design-guidelines"
     },
