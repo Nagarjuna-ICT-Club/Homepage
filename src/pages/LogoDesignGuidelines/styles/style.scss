@@ -25,14 +25,14 @@
       flex-direction: column;
       gap: 10px;
 
-      
       img {
         object-fit: cover;
         @media screen and (max-width:769px) {
           width: 100%; 
         }
-        @media screen and (min-width:426px) {
-          height: 300px;
+
+        @media screen and (min-width:769px) {
+          width: 350px;
         }
       }
 
