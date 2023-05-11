@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/logo-design-guidelines",
+      "destination": "/logo-design-guidelines"
+    },
+    {
+      "source": "/mission-vision",
+      "destination": "/mission-vision"
+    }
+  ]
+}
