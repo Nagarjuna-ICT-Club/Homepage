@@ -15,7 +15,7 @@ const LogoDesionGuideLines = () => {
       <div className="wrapper">
         <div className="img__container">
           <img src={image} alt="unsplash__image" width={"300"} height={"500"} />
-          <h3>Logo Design Competition</h3>
+          <h3>Nagarjuna ICT Club Logo Design Competition</h3>
           <div className="logo">
             <p>
               <i className="ri-calendar-line"></i>
@@ -56,99 +56,95 @@ const LogoDesionGuideLines = () => {
           </button>
         </div>
         <div className="event__details">
-          <h1>Guidelines for Logo Design</h1>
+          <h1>Nagarjuna ICT Club Logo Design Competition</h1>
           <p>
-            Thank you for your interest in submitting a logo design for the
-            Nagarjuna ICT Club! We are excited to see your creative designs and
-            want to ensure that your logos look their best in all applications.
-            Below are some guidelines to help you create a high-quality logo
-            that meets our requirements.
+            Welcome to the Nagarjuna ICT Club Logo Design Competition webpage!
+            This competition is a fantastic opportunity for all students of
+            Nagarjuna College of IT to showcase their creativity and design
+            skills by creating a unique logo that reflects the mission and
+            vision of the ICT Club.
           </p>
           <div>
             <p>
               {" "}
-              <strong>File Format</strong>{" "}
+              <strong>Competition Details</strong>{" "}
             </p>
             <p>
-              Please submit your logo design in PNG format with a transparent
-              background, along with the raw file (such as PSD) used to create
-              it.
+              The competition will take place on May 19, 2023, from 11:30 AM to
+              1:00 PM at Nagarjuna College of IT. The winner of the competition
+              will receive a cash prize of NPR 1000.
             </p>
           </div>
           <div>
-            <p>
+            {/* <p>
               {" "}
               <strong>Dimensions</strong>{" "}
-            </p>
+            </p> */}
             <p>
-              To ensure your logo looks its best in all applications, we
-              recommend creating it in both vector and raster formats. The ideal
+              To participate, you must submit your logo design in PNG format
+              with a transparent background, along with the raw file (such as
+              PSD) used to create it. We encourage you to use tools like Canva,
+              Photoshop, or Illustrator to create your designs. The ideal
               dimensions for raster graphics are <em>1200px</em> by{" "}
               <em>1200px</em> with a minimum resolution of <em>300dpi.</em> For
               social media, we suggest creating a square format logo with a
-              minimum size of <em>400px</em> by <em>400px</em> , as the
-              dimensions may vary depending on the platform.
+              minimum size of <em>400px</em> by <em>400px.</em> Please
+              incorporate the primary color of the Nagarjuna ICT Club{" "}
+              <em>(#243e6a) </em>
+              into your design.
             </p>
           </div>
           <div>
             <p>
               {" "}
-              <strong>Color</strong>{" "}
+              <strong>Design Guidelines</strong>{" "}
             </p>
             <p>
-              The primary color for the Nagarjuna ICT Club is{" "}
-              <strong>#243e6a.</strong> We recommend incorporating this color
-              into your design, but feel free to use other colors as well.
-              Please keep in mind that the logo should be readable in both color
-              and black and white.
-            </p>
-          </div>
-          <div>
-            <p>
-              {" "}
-              <strong>Design Tools</strong>{" "}
-            </p>
-            <p>
-              You can use various design tools to create your logo, such as
-              Canva, Photoshop, or Illustrator. If you are unfamiliar with these
-              tools, don't worry! There are plenty of online tutorials and
-              resources available to help you get started. For more information
-              on logo design principles, you can also refer to this article by{" "}
-              <a
-                href="https://www.canva.com/learn/logo-design-principles/
-"
-              >
-                https://www.canva.com/learn/logo-design-principles/
-              </a>{" "}
-            </p>
-          </div>
-          <div>
-            <p>
-              {" "}
-              <strong>Originality</strong>{" "}
-            </p>
-            <p>
-              We value originality and creativity in all logo designs. Please
-              ensure that your design is unique and not a copy of an existing
-              logo or design.
-            </p>
-            <p>
-              We hope these guidelines help you create a high-quality logo that
-              meets our requirements. If you have any questions or concerns,
-              please do not hesitate to contact us at{" "}
-              <span style={{ color: "#243e6a" }}>
-                <strong>ictclub@nagarjuna.edu.np</strong>{" "}
-              </span>
+              Your design should reflect the mission and vision of the Nagarjuna
+              ICT Club, which is to promote technological advancement,
+              collaboration, and innovation among students in the field of IT.
+              To help you create a design that aligns with the club's mission
+              and vision, we encourage you to review the logo design principles
+              and guidelines, which can be found at [insert QR code here].
             </p>
           </div>
           <div className="evaluation">
-            <h2>Evaluation</h2>
             <p>
-              The evaluation will be carried out by{" "}
-              <em>college administration</em> and <em>ict executives.</em>
+              {" "}
+              <strong>Evaluation Process</strong>{" "}
+            </p>
+            <p>
+              The evaluation process will be carried out by the{" "}
+              <em>college administration</em> and an <em>executive</em> of the
+              ICT Club, who will assess the designs based on their creativity,
+              uniqueness, and alignment with the club's mission and vision.
             </p>
           </div>
-          <p>Good luck with your design!</p>
+          <div>
+            <p>
+              {" "}
+              <strong>Submission</strong>{" "}
+            </p>
+            <p>
+              To submit your design, please email it to
+              <span style={{ color: "#243a6a" }}>
+                {" "}
+                <strong>ictclub@nagarjuna.edu.np.</strong>{" "}
+              </span>
+              The deadline for submissions is{" "}
+              <em>May 15, 2023, at 11:59 PM.</em>
+            </p>
+          </div>
+          <div>
+            <p>
+              We can't wait to see your creative and unique logo designs that
+              represent the Nagarjuna ICT Club's mission and vision. If you have
+              any questions or concerns regarding the competition, please do not
+              hesitate to contact us at ictclub@nagarjuna.edu.np.
+            </p>
+          </div>
+          <p>Best of luck to all participants!</p>
+          <p>Nagarjuna ICT Club</p>
         </div>
       </div>
     </div>

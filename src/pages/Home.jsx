@@ -46,11 +46,11 @@ const Home = () => {
               </div>
               <div className="description">
                 <p>
-                  Thank you for your interest in submitting a logo design for
-                  the Nagarjuna ICT Club! We are excited to see your creative
-                  designs and want to ensure that your logos look their best in
-                  all applications. Below are some guidelines to help you create
-                  a high-quality logo that meets our requirements.
+                  Welcome to the Nagarjuna ICT Club Logo Design Competition
+                  webpage! This competition is a fantastic opportunity for all
+                  students of Nagarjuna College of IT to showcase their
+                  creativity and design skills by creating a unique logo that
+                  reflects the mission and vision of the ICT Club.
                 </p>
                 <div className="buttons">
                   <button onClick={() => navigate("/logo-design-guidelines")}>
