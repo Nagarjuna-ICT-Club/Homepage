@@ -105,7 +105,13 @@ const LogoDesionGuideLines = () => {
               collaboration, and innovation among students in the field of IT.
               To help you create a design that aligns with the club's mission
               and vision, we encourage you to review the logo design principles
-              and guidelines, which can be found at [insert QR code here].
+              and guidelines, which can be found at{" "}
+              <a
+                href="https://www.canva.com/learn/logo-design-principles/"
+                target="_blank"
+              >
+                https://www.canva.com/learn/logo-design-principles/
+              </a>
             </p>
           </div>
           <div className="evaluation">
