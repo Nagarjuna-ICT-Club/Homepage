@@ -22,7 +22,7 @@ const LogoDesionGuideLines = () => {
             </p>
             <p>
               {" "}
-              <strong>Date:</strong> 16 May 2023
+              <strong>Date:</strong> 19 May 2023
             </p>
           </div>
           <div className="price">
@@ -31,7 +31,7 @@ const LogoDesionGuideLines = () => {
             </p>
             <p>
               {" "}
-              <strong>Time:</strong> 3:00 PM - 4:30 PM{" "}
+              <strong>Time:</strong> 11:30 AM - 01:00 PM{" "}
             </p>
           </div>
           <div className="price">
