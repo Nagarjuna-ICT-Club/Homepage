@@ -70,16 +70,12 @@ const LogoDesionGuideLines = () => {
               <strong>Competition Details</strong>{" "}
             </p>
             <p>
-              The competition will take place on May 19, 2023, from 11:30 AM to
-              1:00 PM at Nagarjuna College of IT. The winner of the competition
-              will receive a cash prize of NPR 1000.
+              The competition will take place on <em>May 19, 2023,</em> from
+              <em> 11:30 AM to 1:00 PM</em> at Nagarjuna College of IT. The
+              winner of the competition will receive a cash prize of <em> NPR 1000.</em> 
             </p>
           </div>
           <div>
-            {/* <p>
-              {" "}
-              <strong>Dimensions</strong>{" "}
-            </p> */}
             <p>
               To participate, you must submit your logo design in PNG format
               with a transparent background, along with the raw file (such as
@@ -137,8 +133,7 @@ const LogoDesionGuideLines = () => {
                 {" "}
                 <strong>ictclub@nagarjuna.edu.np.</strong>{" "}
               </span>
-              The deadline for submissions is{" "}
-              <em>May 15, 2023, at 11:59 PM.</em>
+              The deadline for submissions is <em>May 19, 2023, at 1:00 PM.</em>
             </p>
           </div>
           <div>
