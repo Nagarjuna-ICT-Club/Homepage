@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/style.scss";
 import LinkComponent from "../../utils/Link";
-import image from "../../LogoDesign.png";
+import image from "../../assets/LogoDesign.webp"
 
 const LogoDesionGuideLines = () => {
   return (
