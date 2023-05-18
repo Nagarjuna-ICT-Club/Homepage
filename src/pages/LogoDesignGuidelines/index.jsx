@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/style.scss";
 import LinkComponent from "../../utils/Link";
-import image from "../../assets/LogoDesign.webp"
+import image from "../../assets/LogoDesign.webp";
 
 const LogoDesionGuideLines = () => {
   return (
@@ -72,7 +72,8 @@ const LogoDesionGuideLines = () => {
             <p>
               The competition will take place on <em>May 19, 2023,</em> from
               <em> 11:30 AM to 1:00 PM</em> at Nagarjuna College of IT. The
-              winner of the competition will receive a cash prize of <em> NPR 1000.</em> 
+              winner of the competition will receive a cash prize of{" "}
+              <em> NPR 1000.</em>
             </p>
           </div>
           <div>
@@ -131,7 +132,7 @@ const LogoDesionGuideLines = () => {
               To submit your design, please email it to
               <span style={{ color: "#243a6a" }}>
                 {" "}
-                <strong>ictclub@nagarjuna.edu.np.</strong>{" "}
+                <strong>ictclub@nagarjunacollege.edu.np.</strong>{" "}
               </span>
               The deadline for submissions is <em>May 19, 2023, at 1:00 PM.</em>
             </p>
@@ -141,7 +142,7 @@ const LogoDesionGuideLines = () => {
               We can't wait to see your creative and unique logo designs that
               represent the Nagarjuna ICT Club's mission and vision. If you have
               any questions or concerns regarding the competition, please do not
-              hesitate to contact us at ictclub@nagarjuna.edu.np.
+              hesitate to contact us at ictclub@nagarjunacollege.edu.np.
             </p>
           </div>
           <p>Best of luck to all participants!</p>
