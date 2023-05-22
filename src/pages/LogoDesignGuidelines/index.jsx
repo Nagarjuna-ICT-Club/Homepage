@@ -1,9 +1,11 @@
 import React from "react";
 import "./styles/style.scss";
 import LinkComponent from "../../utils/Link";
-import image from "../../assets/LogoDesign.webp"
+import image from "../../assets/LogoDesign.webp";
+import Aside from "../../Components/Event/Guidelines/Aside";
 
 const LogoDesionGuideLines = () => {
+
   return (
     <div className="logodesignguidelines__container">
       <div className="link">
@@ -13,48 +15,13 @@ const LogoDesionGuideLines = () => {
         <LinkComponent path={"/"} title={"Back to home"} />
       </div>
       <div className="wrapper">
-        <div className="img__container">
-          <img src={image} alt="unsplash__image" width={"300"} height={"500"} />
-          <h3>Nagarjuna ICT Club Logo Design Competition</h3>
-          <div className="logo">
-            <p>
-              <i className="ri-calendar-line"></i>
-            </p>
-            <p>
-              {" "}
-              <strong>Date:</strong> 19 May 2023
-            </p>
-          </div>
-          <div className="price">
-            <p>
-              <i className="ri-time-line"></i>
-            </p>
-            <p>
-              {" "}
-              <strong>Time:</strong> 11:30 AM - 01:00 PM{" "}
-            </p>
-          </div>
-          <div className="price">
-            <p>
-              <i className="ri-map-pin-line"></i>
-            </p>
-            <p>
-              {" "}
-              <strong>Venue:</strong> Nagarjuna College of IT
-            </p>
-          </div>
-          <button
-            className="register__btn"
-            onClick={() =>
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLSf_wsY4ot25dEhQXBhkm6uKEnrtwAEtdSFeczouoUWSHtzM4g/viewform",
-                "_blank"
-              )
-            }
-          >
-            Register Now
-          </button>
-        </div>
+        <Aside
+          image={image}
+          date="19 May 2023"
+          time="11:30 AM - 01:00 PM"
+          venue="Nagarjuna College of IT"
+          registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSf_wsY4ot25dEhQXBhkm6uKEnrtwAEtdSFeczouoUWSHtzM4g/closedform"
+        />
         <div className="event__details">
           <h1>Nagarjuna ICT Club Logo Design Competition</h1>
           <p>
@@ -72,7 +39,8 @@ const LogoDesionGuideLines = () => {
             <p>
               The competition will take place on <em>May 19, 2023,</em> from
               <em> 11:30 AM to 1:00 PM</em> at Nagarjuna College of IT. The
-              winner of the competition will receive a cash prize of <em> NPR 1000.</em> 
+              winner of the competition will receive a cash prize of{" "}
+              <em> NPR 1000.</em>
             </p>
           </div>
           <div>
