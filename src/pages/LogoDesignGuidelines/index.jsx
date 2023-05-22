@@ -99,7 +99,7 @@ const LogoDesionGuideLines = () => {
               To submit your design, please email it to
               <span style={{ color: "#243a6a" }}>
                 {" "}
-                <strong>ictclub@nagarjuna.edu.np.</strong>{" "}
+                <strong>ictclub@nagarjunacollege.edu.np.</strong>{" "}
               </span>
               The deadline for submissions is <em>May 19, 2023, at 1:00 PM.</em>
             </p>
@@ -109,7 +109,7 @@ const LogoDesionGuideLines = () => {
               We can't wait to see your creative and unique logo designs that
               represent the Nagarjuna ICT Club's mission and vision. If you have
               any questions or concerns regarding the competition, please do not
-              hesitate to contact us at ictclub@nagarjuna.edu.np.
+              hesitate to contact us at ictclub@nagarjunacollege.edu.np.
             </p>
           </div>
           <p>Best of luck to all participants!</p>
