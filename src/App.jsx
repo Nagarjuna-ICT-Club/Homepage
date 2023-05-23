@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import MissionVision from "./pages/MissionAndVision";
 import LogoDesionGuideLines from "./pages/LogoDesignGuidelines";
+import QuizCompetetion from "./pages/QuizGuidelines";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         path="/logo-design-guidelines"
         element={<LogoDesionGuideLines />}
       />
+      <Route path="/quiz-guidelines" element={<QuizCompetetion />} />
     </Routes>
   );
 }
