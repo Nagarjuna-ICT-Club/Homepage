@@ -90,31 +90,31 @@ const QuizCompetetion = () => {
 
   const schedule = [
     {
-      time: "11:30",
+      time: "02:00 PM",
       event: "Registration and Team Check-in",
     },
     {
-      time: "11:30",
+      time: "02:30",
       event: "Introduction and Welcome Address",
     },
     {
-      time: "11:30",
+      time: "-",
       event: "Rapid Fire Round",
     },
     {
-      time: "11:30",
+      time: "-",
       event: "Q&A Round",
     },
     {
-      time: "11:30",
+      time: "-",
       event: "Coding Round",
     },
     {
-      time: "11:30",
+      time: "-",
       event: "Tiebreaker Round (if necessary)",
     },
     {
-      time: "11:30",
+      time: "-",
       event: "Announcement of Winners and Prize Distribution",
     },
   ];
@@ -130,13 +130,13 @@ const QuizCompetetion = () => {
       <div className="wrapper">
         <Aside
           image={image}
-          date="19 May 2023"
-          time="11:30 AM - 01:00 PM"
+          date="26 May 2023"
+          time="02:30 AM - 04:30 PM"
           venue="Nagarjuna College of IT"
           registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSd_s80gEYslvDkGK5sWBdl8p_tz3PnQeI7pjbSzYYtqse1hOQ/viewform"
         />
         <div className="event_details">
-          <h1>Nagarjuna ICT Club Quiz Competetition</h1>
+          <h1> IT Quiz Competetition</h1>
           <p>
             Welcome to the Nagarjuna ICT Quiz Competetion.We look forward to
             your active participation in the Information Technology Quiz
