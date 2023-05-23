@@ -1,0 +1,21 @@
+.img__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    object-fit: cover;
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 769px) {
+      width: 350px;
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+  }
+}

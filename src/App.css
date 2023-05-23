@@ -13,7 +13,7 @@ body {
   margin: auto;
 }
 .content {
-  width: 70%;
+  /* width: 70%; */
   margin: auto;
   display: grid;
   place-items: center;
@@ -29,13 +29,16 @@ body {
   border-top-right-radius: 5px;
   overflow: hidden;
   width: 100%;
-  
 }
 
-.content .events__container {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
-}
+/* .content .events__container { */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  /* display: flex; */
+  /* gap: 20px; */
+/* } */
+
+
 
 .content .img__container {
   background-color: #fff;
@@ -146,7 +149,21 @@ body {
 }
 
 @media screen and (min-width: 426px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
   .content .events__container .event-card {
     width: 400px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .content {
+    display: flex;
+  }
+  .events__container {
+    display: flex;
+    gap: 20px;
   }
 }

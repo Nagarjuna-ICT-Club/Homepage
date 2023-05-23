@@ -1,8 +1,6 @@
-.logodesignguidelines__container {
+.quizguidelines__container {
+  background-color: #fff;
   color: #000;
-  background-color: #ffffff9c;
-  padding: 50px 5px;
-
   .link {
     width: 90%;
     margin: 10px auto;
@@ -19,11 +17,10 @@
     @media screen and (max-width: 769px) {
       flex-direction: column;
     }
-
-    .event__details {
+    .event_details {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
 
       h2 {
         color: #153978;
@@ -53,7 +50,6 @@
           font-size: 17px;
         }
       }
-
     }
   }
 }
