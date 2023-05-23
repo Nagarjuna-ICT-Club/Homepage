@@ -26,6 +26,7 @@ const Home = () => {
       description:
         "We look forward to your active participation in the Information Technology Quiz Competition. This is your chance to showcase your knowledge and compete with fellow students. For further updates and announcements, please stay connected ",
       navigationPath: "quiz-guidelines",
+       registrationLink:"https://forms.gle/o4GA5heCvLRJpGSMA",
     },
   ];
 
