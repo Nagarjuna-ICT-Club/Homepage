@@ -1,7 +1,7 @@
 import React from "react";
 import Aside from "../../Components/Event/Guidelines/Aside";
 import LinkComponent from "../../utils/Link";
-import image from "../../assets/quiz.jpg";
+import image from "../../assets/quiz-1.jpg";
 import "./styles/style.scss";
 
 const QuizCompetetion = () => {
