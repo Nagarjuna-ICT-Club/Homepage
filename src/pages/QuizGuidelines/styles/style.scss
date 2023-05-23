@@ -22,6 +22,11 @@
       flex-direction: column;
       gap: 10px;
 
+      @media screen and (min-width:426px) {
+        max-height: 850px;
+        overflow-y: auto;
+      }
+
       h2 {
         color: #153978;
         font-size: 24px;

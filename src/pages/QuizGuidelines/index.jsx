@@ -5,6 +5,120 @@ import image from "../../assets/quiz.jpg";
 import "./styles/style.scss";
 
 const QuizCompetetion = () => {
+  const rulesAndRegulations = [
+    {
+      title: "Eligibility",
+      rules: [
+        "The competition is open to all students of Nagarjuna College of IT.",
+        "Participants must form teams consisting of a maximum of 3 participants per team.        ",
+      ],
+    },
+    {
+      title: "Registration",
+      rules: [
+        "Teams must complete the registration process by submitting the online registration form available on [Club website/Social Media].",
+        "The registration deadline is [Registration Deadline in BS].",
+      ],
+    },
+    {
+      title: " Quiz Format:",
+      rules: [
+        "The competition will be conducted in-person at the designated venue.",
+        "Participants should arrive at the venue [Time Before Start] before the event start time for registration and team check-in.",
+      ],
+    },
+    {
+      title: " Points and Scoring:",
+      rules: [
+        "Each correct answer in the Q&A round and coding round will earn the team points, as determined by the quiz organisers.",
+        "In the rapid-fire round, points will be awarded based on the number of correct answers given within the time frame. ",
+      ],
+    },
+    {
+      title: "Prohibited Devices:",
+      rules: [
+        "The usage of mobile phones, laptops, or any electronic devices is strictly prohibited during the quiz rounds.",
+      ],
+    },
+    {
+      title: "Materials",
+      rules: [
+        "Plain sheets will be provided for calculations and rough work.",
+        "Participants are required to carry their own pen for the competition.",
+      ],
+    },
+    {
+      title: "Tiebreaker",
+      rules: [
+        "In the event of a tie in the overall points, an additional Q&A round will be conducted among the tied teams to determine the winner.",
+      ],
+    },
+    {
+      title: "Violation",
+      rules: [
+        "Any violation of the rules may result in disqualification from the contest.",
+      ],
+    },
+  ];
+
+  const evaluationAndPrizes = [
+    {
+      evaluation:
+        "The evaluation of the competition will be carried out by a panel of judges appointed by the Nagarjuna ICT Club and the college administration.",
+    },
+    {
+      evaluation:
+        "The winners will be announced and prizes will be awarded at the end of the competition.",
+    },
+    {
+      prizes: [
+        {
+          title: "First Prize",
+          prize: "NPR 5000 + Token of Love",
+        },
+        {
+          title: "Runner Up",
+          prize: "NPR 2000 + Token of Love",
+        },
+      ],
+    },
+    {
+      last_evaluation:
+        "All participating teams will receive participation certificates, while certificates for the winner and runner-up teams will also be provided.",
+    },
+  ];
+
+  const schedule = [
+    {
+      time: "11:30",
+      event: "Registration and Team Check-in",
+    },
+    {
+      time: "11:30",
+      event: "Introduction and Welcome Address",
+    },
+    {
+      time: "11:30",
+      event: "Rapid Fire Round",
+    },
+    {
+      time: "11:30",
+      event: "Q&A Round",
+    },
+    {
+      time: "11:30",
+      event: "Coding Round",
+    },
+    {
+      time: "11:30",
+      event: "Tiebreaker Round (if necessary)",
+    },
+    {
+      time: "11:30",
+      event: "Announcement of Winners and Prize Distribution",
+    },
+  ];
+
   return (
     <div className="quizguidelines__container">
       <div className="link">
@@ -19,7 +133,7 @@ const QuizCompetetion = () => {
           date="19 May 2023"
           time="11:30 AM - 01:00 PM"
           venue="Nagarjuna College of IT"
-          registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSf_wsY4ot25dEhQXBhkm6uKEnrtwAEtdSFeczouoUWSHtzM4g/closedform"
+          registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSd_s80gEYslvDkGK5sWBdl8p_tz3PnQeI7pjbSzYYtqse1hOQ/viewform"
         />
         <div className="event_details">
           <h1>Nagarjuna ICT Club Quiz Competetition</h1>
@@ -27,7 +141,7 @@ const QuizCompetetion = () => {
             Welcome to the Nagarjuna ICT Quiz Competetion.We look forward to
             your active participation in the Information Technology Quiz
             Competition. This is your chance to showcase your knowledge and
-            compete with fellow students. 
+            compete with fellow students.
             {/* For further updates and announcements, */}
             {/* please stay connected with us on [Club website/Social Media]. */}
           </p>
@@ -83,6 +197,65 @@ const QuizCompetetion = () => {
             </em>{" "}
             will be asked in the quiz.
           </p>
+          <h2>Rules and Regulations:</h2>
+          {rulesAndRegulations.map((rules, i) => {
+            return (
+              <div key={i}>
+                <p>
+                  <strong>{rules.title}</strong>
+                </p>
+                {rules.rules.map((rule, i) => {
+                  return <p key={i}>{rule}</p>;
+                })}
+              </div>
+            );
+          })}
+          <h2>Evaluation and Prizes</h2>
+          {evaluationAndPrizes.map((evaluation, i) => {
+            return (
+              <div key={i}>
+                <p>{evaluation?.evaluation}</p>
+                {evaluation.prizes?.map((prize, i) => {
+                  return (
+                    <p key={i}>
+                      <strong>{prize.title}</strong> : {prize.prize}
+                    </p>
+                  );
+                })}
+                <p>{evaluation.last_evaluation}</p>
+              </div>
+            );
+          })}
+          <h2>Event Schedule</h2>
+          {schedule.map((schedule, i) => {
+            return (
+              <div key={i}>
+                <p>
+                  <strong>Start time:</strong>
+                  {schedule.time}
+                </p>
+                <p>{schedule.event}</p>
+              </div>
+            );
+          })}
+          <p>
+            Please note that a detailed schedule will be provided to registered
+            teams prior to the event.
+          </p>
+          <p>
+            We look forward to your active participation in the Information
+            Technology Quiz Competition. This is your chance to showcase your
+            knowledge and compete with fellow students. For further updates and
+            announcements, please stay connected with us on [Club website/Social
+            Media].
+          </p>
+          <div>
+            <p>For any inquiries, kindly contact:</p>
+            <p>
+              <em>Sarbendra Sigdel</em>
+            </p>
+            <p>9851311380</p>
+          </div>
         </div>
       </div>
     </div>
