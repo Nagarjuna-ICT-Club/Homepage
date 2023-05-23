@@ -94,7 +94,7 @@ const QuizCompetetion = () => {
       event: "Registration and Team Check-in",
     },
     {
-      time: "02:30",
+      time: "02:30 PM",
       event: "Introduction and Welcome Address",
     },
     {
@@ -131,7 +131,7 @@ const QuizCompetetion = () => {
         <Aside
           image={image}
           date="26 May 2023"
-          time="02:30 AM - 04:30 PM"
+          time="02:30 PM - 04:30 PM"
           venue="Nagarjuna College of IT"
           registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSd_s80gEYslvDkGK5sWBdl8p_tz3PnQeI7pjbSzYYtqse1hOQ/viewform"
         />
