@@ -17,14 +17,14 @@ const QuizCompetetion = () => {
       title: "Registration",
       rules: [
         "Teams must complete the registration process by submitting the online registration form available on [Club website/Social Media].",
-        "The registration deadline is [Registration Deadline in BS].",
+        "The registration deadline is 12 Jetha 2080,7:00 am.",
       ],
     },
     {
       title: " Quiz Format:",
       rules: [
         "The competition will be conducted in-person at the designated venue.",
-        "Participants should arrive at the venue [Time Before Start] before the event start time for registration and team check-in.",
+        "Participants should arrive at the venue 2:00 pm before the event start time for registration and team check-in.",
       ],
     },
     {
@@ -90,32 +90,28 @@ const QuizCompetetion = () => {
 
   const schedule = [
     {
-      time: "11:30",
-      event: "Registration and Team Check-in",
+      time: " 2:00 pm",
+      event: "Team Check-in",
     },
     {
-      time: "11:30",
+      time: " 2:20 pm",
       event: "Introduction and Welcome Address",
     },
     {
-      time: "11:30",
+      time: "--",
       event: "Rapid Fire Round",
     },
     {
-      time: "11:30",
+      time: "--",
       event: "Q&A Round",
     },
     {
-      time: "11:30",
+      time: "--",
       event: "Coding Round",
     },
     {
-      time: "11:30",
+      time: "--",
       event: "Tiebreaker Round (if necessary)",
-    },
-    {
-      time: "11:30",
-      event: "Announcement of Winners and Prize Distribution",
     },
   ];
 
@@ -131,7 +127,7 @@ const QuizCompetetion = () => {
         <Aside
           image={image}
           date="19 May 2023"
-          time="11:30 AM - 01:00 PM"
+          time="2:30 AM - 04:30 PM"
           venue="Nagarjuna College of IT"
           registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSd_s80gEYslvDkGK5sWBdl8p_tz3PnQeI7pjbSzYYtqse1hOQ/viewform"
         />
@@ -153,12 +149,9 @@ const QuizCompetetion = () => {
             <p>
               <strong>Duration:</strong> 30 seconds
             </p>
-            <p>Each team leader will be asked a maximum of 10 questions.</p>
-            <p>Each question is worth 1 point.</p>
-            <p>
-              Only the team leader is allowed to answer the questions in this
-              round.
-            </p>
+            <p>Each team will be asked a maximum of 10 questions.</p>
+            <p>Each question is worth 10 point.</p>
+            <p>Any member is allowed to answer the questions in this round.</p>
           </div>
           <div>
             <p>
@@ -234,7 +227,10 @@ const QuizCompetetion = () => {
                   <strong>Start time:</strong>
                   {schedule.time}
                 </p>
-                <p>{schedule.event}</p>
+                <p>
+                  {" "}
+                  <strong>{schedule.event}</strong>{" "}
+                </p>
               </div>
             );
           })}
