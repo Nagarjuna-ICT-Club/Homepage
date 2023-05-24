@@ -17,14 +17,14 @@ const QuizCompetetion = () => {
       title: "Registration",
       rules: [
         "Teams must complete the registration process by submitting the online registration form available on [Club website/Social Media].",
-        "The registration deadline is [Registration Deadline in BS].",
+        "The registration deadline is 12 Jetha 2080,7:00 am.",
       ],
     },
     {
       title: " Quiz Format:",
       rules: [
         "The competition will be conducted in-person at the designated venue.",
-        "Participants should arrive at the venue [Time Before Start] before the event start time for registration and team check-in.",
+        "Participants should arrive at the venue 2:00 pm before the event start time for registration and team check-in.",
       ],
     },
     {
@@ -90,32 +90,28 @@ const QuizCompetetion = () => {
 
   const schedule = [
     {
-      time: "02:00 PM",
-      event: "Registration and Team Check-in",
+      time: " 2:00 pm",
+      event: "Team Check-in",
     },
     {
-      time: "02:30 PM",
+      time: " 2:20 pm",
       event: "Introduction and Welcome Address",
     },
     {
-      time: "-",
+      time: "--",
       event: "Rapid Fire Round",
     },
     {
-      time: "-",
+      time: "--",
       event: "Q&A Round",
     },
     {
-      time: "-",
+      time: "--",
       event: "Coding Round",
     },
     {
-      time: "-",
+      time: "--",
       event: "Tiebreaker Round (if necessary)",
-    },
-    {
-      time: "-",
-      event: "Announcement of Winners and Prize Distribution",
     },
   ];
 
@@ -153,12 +149,9 @@ const QuizCompetetion = () => {
             <p>
               <strong>Duration:</strong> 30 seconds
             </p>
-            <p>Each team leader will be asked a maximum of 10 questions.</p>
-            <p>Each question is worth 1 point.</p>
-            <p>
-              Only the team leader is allowed to answer the questions in this
-              round.
-            </p>
+            <p>Each team will be asked a maximum of 10 questions.</p>
+            <p>Each question is worth 10 point.</p>
+            <p>Any member is allowed to answer the questions in this round.</p>
           </div>
           <div>
             <p>
@@ -234,7 +227,10 @@ const QuizCompetetion = () => {
                   <strong>Start time:</strong>
                   {schedule.time}
                 </p>
-                <p>{schedule.event}</p>
+                <p>
+                  {" "}
+                  <strong>{schedule.event}</strong>{" "}
+                </p>
               </div>
             );
           })}
