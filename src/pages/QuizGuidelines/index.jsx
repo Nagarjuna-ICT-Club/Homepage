@@ -1,7 +1,7 @@
 import React from "react";
 import Aside from "../../Components/Event/Guidelines/Aside";
 import LinkComponent from "../../utils/Link";
-import image from "../../assets/quiz.jpg";
+import image from "../../assets/quiz-1.jpg";
 import "./styles/style.scss";
 
 const QuizCompetetion = () => {
@@ -150,13 +150,13 @@ const QuizCompetetion = () => {
       <div className="wrapper">
         <Aside
           image={image}
-          date="19 May 2023"
-          time="2:30 AM - 04:30 PM"
+          date="26 May 2023"
+          time="02:30 PM - 04:30 PM"
           venue="Nagarjuna College of IT"
           registrationLink="https://docs.google.com/forms/d/e/1FAIpQLSd_s80gEYslvDkGK5sWBdl8p_tz3PnQeI7pjbSzYYtqse1hOQ/viewform"
         />
         <div className="event_details">
-          <h1>Nagarjuna ICT Club Quiz Competetition</h1>
+          <h1> IT Quiz Competetition</h1>
           <p>
             Welcome to the Nagarjuna ICT Quiz Competetion.We look forward to
             your active participation in the Information Technology Quiz
