@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logov2.png";
+import Logo from "../assets/logov3.png";
 import LinkComponent from "../utils/Link";
 import Event from "../Components/Event";
 

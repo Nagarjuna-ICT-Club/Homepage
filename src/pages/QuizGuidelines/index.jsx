@@ -84,7 +84,7 @@ const QuizCompetetion = () => {
     },
     {
       last_evaluation:
-        "All participating teams will receive participation certificates, while certificates for the winner and runner-up teams will also be provided.",
+        "Winner and Runner up teams will receive participation certificates.",
     },
   ];
 
