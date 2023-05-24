@@ -115,6 +115,30 @@ const QuizCompetetion = () => {
     },
   ];
 
+  const topics = [
+    {
+      topic: " Information Technology(IT)",
+    },
+    {
+      topic: " Digital Logic",
+    },
+    {
+      topic: " Computer Networks",
+    },
+    {
+      topic: " Web Development",
+    },
+    {
+      topic: " Data Structure and algorithm",
+    },
+    {
+      topic: " C Programming",
+    },
+    {
+      topic: " Object oriented programming",
+    },
+  ];
+
   return (
     <div className="quizguidelines__container">
       <div className="link">
@@ -180,16 +204,12 @@ const QuizCompetetion = () => {
             <p>Each correct coding challenge will earn the team 3 points.</p>
           </div>
           <h2>Topics Covered</h2>
-          <p>
-            Topics from{" "}
-            <em>
-              {" "}
-              Information Technology(IT),Digital Logic,Computer Networks,Web
-              Development,Data Structure and algorithm,C Programming and Object
-              oriented programming{" "}
-            </em>{" "}
-            will be asked in the quiz.
-          </p>
+
+          <ol>
+            {topics.map((topic, i) => {
+              return <li key={i}>{topic.topic}</li>;
+            })}
+          </ol>
           <h2>Rules and Regulations:</h2>
           {rulesAndRegulations.map((rules, i) => {
             return (
