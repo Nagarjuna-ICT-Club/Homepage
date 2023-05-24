@@ -33,8 +33,8 @@ const Home = () => {
   return (
     <div className="App" style={{ backgroundImage: "../assets/bg.png" }}>
       <div className="content">
-        <div className="img__container">
-          <img src={Logo} alt="logo" />
+        <div className="img__container_" style={{textAlign:"center"}}>
+          <img src={Logo} alt="logo" width={"90"} />
           <div className="links">
             <LinkComponent
               path={"mission-vision"}

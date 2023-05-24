@@ -41,7 +41,7 @@ body {
   padding: 20px 0;
 }
 
-.content .events__container .event-card img {
+.content .events__container .event-card  img {
   object-fit: cover;
   width: 100%;
 }
