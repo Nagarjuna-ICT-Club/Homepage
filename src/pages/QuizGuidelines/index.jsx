@@ -283,7 +283,7 @@ const QuizCompetetion = () => {
             <p>
               <em>Sarbendra Sigdel</em>
             </p>
-            <p>9851311380</p>
+            <p>9860672399</p>
           </div>
         </div>
       </div>
