@@ -78,7 +78,7 @@ const QuizCompetetion = () => {
         },
         {
           title: "Runner Up",
-          prize: "NPR 2000 + Token of Love",
+          prize: "NPR 2000",
         },
       ],
     },
