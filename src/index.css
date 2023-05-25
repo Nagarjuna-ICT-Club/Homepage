@@ -15,6 +15,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+li {
+  list-style: inside !important;
+}
+
 * {
   margin: 0;
   padding: 0;

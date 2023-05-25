@@ -139,6 +139,36 @@ const QuizCompetetion = () => {
     },
   ];
 
+  const rounds = [
+    {
+      title: "Rapid Fire Round",
+      duration: "30 seconds",
+      rules: [
+        "Each team will be asked a maximum of 10 questions.",
+        "Each question is worth 10 point.",
+        "Any member is allowed to answer the questions in this round.",
+      ],
+    },
+    {
+      title: "Q&A Round",
+      rules: [
+        " Traditional question-and-answer round focusing on various aspects of information technology.",
+        "Each question will have 4 options.",
+        "Teams must select the correct option within 20 seconds",
+        "Each correct answer in this round is worth 20 points.",
+      ],
+    },
+    {
+      title: "Coding Round",
+      rules: [
+        "This round will challenge participants with coding puzzles and problems.",
+        "Each team will face a maximum of 2 coding challenges.",
+        "Teams must solve the given coding challenges within 30 seconds.",
+        "Each correct coding challenge will earn the team 25 points.",
+      ],
+    },
+  ];
+
   return (
     <div className="quizguidelines__container">
       <div className="link">
@@ -166,50 +196,33 @@ const QuizCompetetion = () => {
             {/* please stay connected with us on [Club website/Social Media]. */}
           </p>
           <h2>Quiz Rounds</h2>
-          <div>
-            <p>
-              <strong>1.Rapid Fire Round</strong>
-            </p>
-            <p>
-              <strong>Duration:</strong> 30 seconds
-            </p>
-            <p>Each team will be asked a maximum of 10 questions.</p>
-            <p>Each question is worth 10 point.</p>
-            <p>Any member is allowed to answer the questions in this round.</p>
-          </div>
-          <div>
-            <p>
-              <strong>2. Q&A Round</strong>
-            </p>
-            <p>
-              Traditional question-and-answer round focusing on various aspects
-              of information technology.
-            </p>
-            <p> Each question will have 4 options.</p>
-            <p>Teams must select the correct option within 20 seconds.</p>
-            <p>Each correct answer in this round is worth 20 points.</p>
-          </div>
-          <div>
-            <p>
-              <strong>3. Coding Round</strong>
-            </p>
-            <p>
-              This round will challenge participants with coding puzzles and
-              problems.
-            </p>
-            <p>Each team will face a maximum of 2 coding challenges.</p>
-            <p>
-              Teams must solve the given coding challenges within 30 seconds.
-            </p>
-            <p>Each correct coding challenge will earn the team 25 points.</p>
-          </div>
+          {rounds.map((round, i) => {
+            return (
+              <div key={i}>
+                <p>
+                  <strong>{round.title}</strong>
+                </p>
+                {round?.duration && (
+                  <p>
+                    {" "}
+                    <strong>Duration:</strong> {round.duration}
+                  </p>
+                )}
+                <ul>
+                  {round.rules.map((rule, i) => {
+                    return <li key={i}>{rule}</li>;
+                  })}
+                </ul>
+              </div>
+            );
+          })}
           <h2>Topics Covered</h2>
 
-          <ol>
+          <ul>
             {topics.map((topic, i) => {
               return <li key={i}>{topic.topic}</li>;
             })}
-          </ol>
+          </ul>
           <h2>Rules and Regulations:</h2>
           {rulesAndRegulations.map((rules, i) => {
             return (
