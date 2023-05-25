@@ -187,7 +187,7 @@ const QuizCompetetion = () => {
             </p>
             <p> Each question will have 4 options.</p>
             <p>Teams must select the correct option within 20 seconds.</p>
-            <p>Each correct answer in this round is worth 2 points.</p>
+            <p>Each correct answer in this round is worth 20 points.</p>
           </div>
           <div>
             <p>
@@ -201,7 +201,7 @@ const QuizCompetetion = () => {
             <p>
               Teams must solve the given coding challenges within 30 seconds.
             </p>
-            <p>Each correct coding challenge will earn the team 3 points.</p>
+            <p>Each correct coding challenge will earn the team 25 points.</p>
           </div>
           <h2>Topics Covered</h2>
 
