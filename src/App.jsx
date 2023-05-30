@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import MissionVision from "./pages/MissionAndVision";
 import LogoDesionGuideLines from "./pages/LogoDesignGuidelines";
 import QuizCompetetion from "./pages/QuizGuidelines";
+import GitandGithubWorkShop from "./pages/GitandGithubWorkshop";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         element={<LogoDesionGuideLines />}
       />
       <Route path="/quiz-guidelines" element={<QuizCompetetion />} />
+      <Route
+        path="/workshop-git-and-github"
+        element={<GitandGithubWorkShop />}
+      />
     </Routes>
   );
 }

@@ -26,14 +26,25 @@ const Home = () => {
       description:
         "We look forward to your active participation in the Information Technology Quiz Competition. This is your chance to showcase your knowledge and compete with fellow students. For further updates and announcements, please stay connected ",
       navigationPath: "quiz-guidelines",
-       registrationLink:"https://forms.gle/o4GA5heCvLRJpGSMA",
+      registrationLink: "https://forms.gle/o4GA5heCvLRJpGSMA",
+    },
+    {
+      card_img:
+        "https://ik.imagekit.io/hjapyoj8o/gitandgithub.jpg?updatedAt=1685432118947",
+      card_title: "Workshop on Git and Github",
+      date: "2 June 2023",
+      description:
+        "We look forward to your active participation in the Information Technology Quiz Competition. This is your chance to showcase your knowledge and compete with fellow students. For further updates and announcements, please stay connected ",
+      navigationPath: "workshop-git-and-github",
+      registrationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSfVIocBCdueHv8hm-weSlWsixriL6lln_ic4_y6hRQZ2-uKPQ/viewform",
     },
   ];
 
   return (
     <div className="App" style={{ backgroundImage: "../assets/bg.png" }}>
       <div className="content">
-        <div className="img__container_" style={{textAlign:"center"}}>
+        <div className="img__container_" style={{ textAlign: "center" }}>
           <img src={Logo} alt="logo" width={"90"} />
           <div className="links">
             <LinkComponent
@@ -48,7 +59,7 @@ const Home = () => {
         <div className="divider"></div>
         <h1 className="title">Events</h1>
         <div className="events__container">
-          {events.map((event, i) => {
+          {events.reverse().map((event, i) => {
             return <Event event={event} key={i} />;
           })}
         </div>
