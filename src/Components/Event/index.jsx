@@ -20,9 +20,11 @@ const Event = ({ event }) => {
           <p>{event.date}</p>
         </div>
         <div className="price">
-          <p>
-            <strong>Winning Price:</strong> {event.winning_price}
-          </p>
+          {event?.winning_price && (
+            <p>
+              <strong>Winning Price:</strong> {event.winning_price}
+            </p>
+          )}
         </div>
         <div className="description">
           <p>{event.description}</p>

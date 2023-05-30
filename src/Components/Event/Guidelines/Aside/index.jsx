@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/style.scss";
 
+
 const Aside = ({ image, date, time, venue, registrationLink }) => {
   return (
     <div className="img__container">
@@ -33,12 +34,16 @@ const Aside = ({ image, date, time, venue, registrationLink }) => {
           <strong>Venue:</strong> {venue}
         </p>
       </div>
-      <button
-        className="register__btn"
-        onClick={() => window.open(registrationLink, "_blank")}
-      >
-        Register Now
-      </button>
+      {registrationLink !== "0" ? (
+        <button
+          className="register__btn"
+          onClick={() => window.open(registrationLink, "_blank")}
+        >
+          Register Now
+        </button>
+      ) : (
+        <p>popup</p>
+      )}
     </div>
   );
 };
