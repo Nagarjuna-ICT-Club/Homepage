@@ -39,6 +39,17 @@ const Home = () => {
       registrationLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSfVIocBCdueHv8hm-weSlWsixriL6lln_ic4_y6hRQZ2-uKPQ/viewform",
     },
+    {
+      card_img:
+        "https://ik.imagekit.io/hjapyoj8o/webdevsession.jpg?updatedAt=1685963544023",
+      card_title: "Web dev Session",
+      date: "9 June 2023",
+      description:
+        "We are pleased to inform you about our upcoming Web Development Session, titled 'Exploring Tools, Trends, and Roadmaps' organized by the Nagarjuna ICT Club.",
+      navigationPath: "web-dev-session",
+      registrationLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSeAjqqQR2swLhIKruRub0rw1rlneCZDArLA8lQfnOKaHrXO9g/viewform",
+    },
   ];
 
   return (
