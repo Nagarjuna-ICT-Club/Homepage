@@ -5,6 +5,7 @@ import MissionVision from "./pages/MissionAndVision";
 import LogoDesionGuideLines from "./pages/LogoDesignGuidelines";
 import QuizCompetetion from "./pages/QuizGuidelines";
 import GitandGithubWorkShop from "./pages/GitandGithubWorkshop";
+import WebDevSession from "./pages/WebDevSession";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         path="/workshop-git-and-github"
         element={<GitandGithubWorkShop />}
       />
+      <Route path="web-dev-session" element = {<WebDevSession />} />
     </Routes>
   );
 }

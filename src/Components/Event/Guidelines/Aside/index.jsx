@@ -6,7 +6,7 @@ const Aside = ({ image, date, time, venue, registrationLink }) => {
   return (
     <div className="img__container">
       <img src={image} alt="unsplash__image" width={"300"} height={"500"} />
-      <h3>Nagarjuna ICT Club Logo Design Competition</h3>
+      <h3>Web Development Session Organized by Nagarjuna ICT Club</h3>
       <div className="logo">
         <p>
           <i className="ri-calendar-line"></i>
