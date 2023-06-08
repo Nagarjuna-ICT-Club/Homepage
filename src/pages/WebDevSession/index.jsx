@@ -9,6 +9,7 @@ const WebDevSession = () => {
       title: "Entry Fee and Registration:",
       fee: [
         "Free entry for club members",
+        "Maximum 40 participants",
         "Registration will be done using the participants' membership ID, and it is mandatory for all interested individuals.",
         "The registration process will be communicated through our club's official communication channels.",
       ],

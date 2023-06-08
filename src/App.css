@@ -13,12 +13,9 @@ body {
   margin: auto;
 }
 .content {
-  /* width: 70%; */
   margin: auto;
-  display: grid;
-  place-items: center;
-  place-content: center;
   color: #000;
+  min-height: 100vh;
 }
 
 .content .events__container .event-card {
@@ -41,13 +38,14 @@ body {
   padding: 20px 0;
 }
 
-.content .events__container .event-card  img {
+.content .events__container .event-card img {
   object-fit: cover;
   width: 100%;
 }
 
 .content .title {
   padding: 20px 0;
+  text-align: center;
 }
 
 .content .events__container .event-card .description__container {
@@ -139,34 +137,20 @@ body {
   color: rgb(43 40 41);
 }
 
-@media screen and (max-width: 460px) {
-  .content {
-    width: 90%;
-  }
-  .events__container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 426px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content .events__container .event-card {
-    width: 400px;
-  }
+.events__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-@media screen and (min-width: 1024px) {
-  .content {
-    display: flex;
-  }
-  .events__container {
-    display: flex;
-    gap: 20px;
-  }
-}

@@ -4,6 +4,7 @@ import LinkComponent from "../utils/Link";
 import Event from "../Components/Event";
 
 const Home = () => {
+  console.log(navigator)
   const events = [
     {
       card_img:
